@@ -2,6 +2,8 @@
 // Filename: d3dclass.cpp
 ////////////////////////////////////////////////////////////////////////////////
 #include "d3dclass.h"
+#include <fstream>
+#include <iostream>
 
 D3DClass::D3DClass()
 {
@@ -133,6 +135,7 @@ bool D3DClass::Initialize(int screenWidth, int screenHeight, bool vsync, HWND hw
 	{
 		return false;
 	}
+
 
 	// Release the display mode list.
 	delete[] displayModeList;
